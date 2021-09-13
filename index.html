@@ -21,11 +21,14 @@
   <header></header>
   <main class="main">
     <div class="container" >
+      <div>
+        <h1 id="store-name">Amazon <span id="store-name-span">Online Store</span></h1>
+      </div>
       <div class="search-box " >
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button btn-custom" data-toggle="button" aria-pressed="false"
+        <input id="input-field" class="search-field" type="text" placeholder="Search Here Something"/>
+        <button type="button" class="btn btn-primary search-button" id="btn-custom" data-toggle="button" aria-pressed="false"
           autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
+          Search Now
         </button>
       </div>
     </div>
@@ -75,7 +78,7 @@
           </tbody>
         </table>
         <div class="parces text-center">
-          <button class="btn btn-primary text-center">Buy Now</button>
+          <button class="btn btn-secondary text-success fw-bolder">Buy Now</button>
         </div>
       </div>
     </div>
