@@ -1,12 +1,9 @@
+/* Common Body style */
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
-
-.search-box {
-  margin-top: 28px;
-  margin-bottom: 28px;
-}
+/* Given Store name */
 #store-name{
   width: 40%;
   font-weight: 900;
@@ -18,8 +15,13 @@ body {
 #store-name-span{
   color: #ff7200;
 }
+
+/* For the Search Area */
+.search-box {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
 .search-field {
-  
   width: 30%;
   margin: 0px 10px 0px 30%;
   padding: 15px;
@@ -28,6 +30,7 @@ body {
   border-radius: 7px 0px 0px 7px;
   outline: none;
 }
+/* For Search Button */
 #btn-custom{
   padding: 15px;
   margin-top: -2px;
@@ -38,6 +41,7 @@ body {
   outline: none;
 
 }
+/* This section is for All products style */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -48,6 +52,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* This is for Single Product Style */
 .single-product {
   box-shadow: 2px 2px 17px #2c282869;
   border-radius: 10px;
@@ -58,19 +63,20 @@ body {
   background-color: whitesmoke;
   background-blend-mode: multiply;
 }
-
+/* Product Hover Effect */
 .single-product:hover {
-  
   box-shadow: 6px 6px 17px gray;
   border-radius: 30px;
   border: 2px solid gray;
   
 }
+/* Product Image */
 .product-image {
   width: 150px;
   height: 150px;
   mix-blend-mode: multiply;
 }
+/* This is for Card Section */
 .cart {
   background-color: #5cb85c;
   width: 350px;
@@ -87,6 +93,8 @@ body {
   background-color: white;
   padding-right: 30px;
 }
+
+/* This is for Responsive */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -94,7 +102,6 @@ body {
   }
   .cart {
     width: 300px;
-    /* border: 1px solid green; */
     padding: 10px;
     box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
@@ -105,6 +112,7 @@ body {
     padding-right: 10px;
   }
 }
+/* This is for Responsive Mobile View*/
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
